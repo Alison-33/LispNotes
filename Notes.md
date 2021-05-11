@@ -19,6 +19,6 @@
 ### Boolean operations
 - Lisp supports Boolean operators **and**, **or**, and **not**. The 2 former have variable arity, and the last one is unary.
 - The values true/false are denoted in Lisp by t/nil respectively.
-> (let ((x 5))
+\> (let ((x 5))
 (or (< x 2) (> x 3))
 T
