@@ -33,7 +33,7 @@ T
 - We have 3 built-in functions to create a list which are summarized below:
   1. **cons**: creates a list by adding an element as the head of an existing list
   2. **list**: creates a list comprised of its arguments.
-  3. **append**: creates a list by concatenating existing lists.
+  3. **append**: creates a list by concatenating existing **lists**.
 - A list in Lisp is singly-linked where each node is a pair of 2 pointers, the first one pointing to a data element and the second one pointing to the tail of the list with the last node's second pointer pointing to the empty list.
 ```
 > (cons 'a '())
@@ -41,4 +41,16 @@ T
 
 > (cons 'a (cons 'b '()))
 (A B)
+
+> (list 1 2 'a 3)
+(1 2 A 3)
+
+> (list 1 '(2 3) 4)
+(1 (2 3) 4)
+
+> (append '(1 2) '(3 4))
+(1 2 3 4)
+
+> (append 1 '(4 5))
+Error: 1 is not of type LIST.
 ```
