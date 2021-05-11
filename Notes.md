@@ -22,7 +22,7 @@
 - The values true/false are denoted in Lisp by t/nil respectively.
 - The **or** Boolean operator evaluates its subexpressions from left to right and stops immediately if any subexpression evaluates to **true**.
 ```
-\> (let ((x 5))
+> (let ((x 5))
 (or (< x 2) (> x 3))
 T
 ```
@@ -36,9 +36,9 @@ T
   3. **append**: creates a list by concatenating existing lists.
 - A list in Lisp is singly-linked where each node is a pair of 2 pointers, the first one pointing to a data element and the second one pointing to the tail of the list with the last node's second pointer pointing to the empty list.
 ```
-\> (cons 'a '())
+> (cons 'a '())
 (A)
 
-\> (cons 'a (cons 'b '()))
+> (cons 'a (cons 'b '()))
 (A B)
 ```
