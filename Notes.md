@@ -4,7 +4,7 @@
 - Expressions are written as lists, using prefix notation, which places operators to the left of their oerands.
 - The first element in an expression list is the name of a function and the remainder of the list are the arguments.
 
-`(- 14 (x 2 3))`
+`(- 14 (* 2 3))`
 
 
 ### Arity of functions
@@ -14,7 +14,7 @@
 - Variable arity functions can take any number of arguments
 
 ### Prohibiting expresion evaluation
-- (/ (* 2 6) 3) ; Returns 4.
+- `(/ (* 2 6) 3)` ; Returns 4.
 - **'**(/ (* 2 6) 3) ; Returns (/ (* 2 6) 3).
 
 
